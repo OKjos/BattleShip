@@ -34,4 +34,13 @@ while (isSunk == false) {
   "which means your shooting accuracy was " + (3/guesses);
  alert(stats);
  
-
+//end game
+function endGame() {
+  for (let i = 0; i < ships.length; i++) {
+    let ship = ships[i];
+    if (ships.hits.indexOf("") == -1) {
+      return false;
+    }
+    return true;
+  }
+}
